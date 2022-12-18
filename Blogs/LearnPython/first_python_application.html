@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoodStart.Dev</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1 id="blog_title">First Python Application</h1>
+        <div id="blog_content">
+            <p>
+                Here is a simple Python application that generates a random horoscope based on the user's astrological sign:
+            </p>
+            <pre>
+                <code>
+                    import random
+                    
+                    # List of horoscopes
+                    horoscopes = [
+                        "You will have a great day today!",
+                        "Expect some unexpected surprises today.",
+                        "Today is a good day to take risks and try new things.",
+                        "Today is a good day to focus on your relationships.",
+                        "Today is a good day to focus on your personal growth.",
+                    ]
+                    
+                    # Dictionary of astrological signs and corresponding horoscopes
+                    signs = {
+                        "Aries": horoscopes[0],
+                        "Taurus": horoscopes[1],
+                        "Gemini": horoscopes[2],
+                        "Cancer": horoscopes[3],
+                        "Leo": horoscopes[4],
+                    }
+                    
+                    # Get the user's astrological sign
+                    sign = input("Enter your astrological sign: ")
+                    
+                    # If the sign is in the dictionary, print the corresponding horoscope
+                    if sign in signs:
+                        print(signs[sign])
+                    
+                    # If the sign is not in the dictionary, print a random horoscope
+                    else:
+                        print(random.choice(horoscopes))
+                </code>
+            </pre>
+            <p>
+                This program starts by importing the random module, which will be used to choose a random horoscope if the user's astrological sign is not in the dictionary. The program then defines a list of horoscopes and a dictionary of astrological signs and corresponding horoscopes.
+            </p>
+            <p>
+                The program prompts the user to enter their astrological sign, and then checks if the sign is in the dictionary. If it is, the program prints the corresponding horoscope. If the sign is not in the dictionary, the program uses the random.choice() function to choose a random horoscope from the list and print it.
+            </p>    
+            <p>
+                I hope this simple example gives you an idea of how you can build a fun Python application. You can use similar techniques and concepts to build more complex and sophisticated programs. Good luck with your project!
+            </p>
+        </div>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
